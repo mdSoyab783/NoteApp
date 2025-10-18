@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #8c53ff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 827px;
+    height: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: scroll;
+}   
+.list-header {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.addNoteDiv {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+ }
+.addNoteDiv:hover {
+    transition: 0.25s;
+    background-color: #f1f1f1;
+}
+.addNoteDiv i {
+    font-size: 70px;
+    color: #c2abf1;
+}
+.list-container {
+    display: flex;
+    justify-content: flex-start;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+li {
+    background-color: #fff385;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 200px;
+    width: 200px;
+    box-shadow: 9px 9px 15px #b3b3b3, -9px -9px 15px #ffffff;
+}
+li span {
+    font-size: 14px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    width: 100%;
+ }
+.noteBtns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.editBtn, .deleteBtn {
+    background-color: #c6aaff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 12px;
+    width: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.editBtn {
+    background: gainsboro;
+    color: #333;
+ }
+.deleteBtn:hover {
+    background-color: #8c53ff;
+}
+.editBtn:hover {
+    background-color: gray;
+}
+.popupContainer, .editing-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.popup, #editing-container {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #8c53ff;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.submitBtn, .cancelBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+.cancelBtn {
+    background-color: gainsboro;
+    color: #333;
+}
